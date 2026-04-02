@@ -1,0 +1,119 @@
+/* 하이라이트된 N2 매칭 단어 */
+.jlpt-match {
+  background: linear-gradient(to bottom, transparent 60%, rgba(76, 201, 240, 0.2) 60%);
+  cursor: pointer;
+  position: relative;
+}
+
+.jlpt-match:hover {
+  background: rgba(76, 201, 240, 0.25);
+  border-radius: 2px;
+}
+
+/* 인라인 루비 (일본어 표기) */
+.jlpt-ruby {
+  font-size: 0.7em;
+  color: #e63946;
+  margin-left: 2px;
+  opacity: 0.8;
+}
+
+.jlpt-ruby rt {
+  font-size: 0.85em;
+  color: #888;
+}
+
+/* 강제모드: 한국어 대체 */
+.jlpt-force-mode {
+  background: rgba(230, 57, 70, 0.1);
+  border-bottom: 2px solid #e63946;
+}
+
+.jlpt-force-mode:hover {
+  background: rgba(230, 57, 70, 0.2);
+}
+
+.jlpt-ruby.jlpt-force {
+  font-size: inherit;
+  color: #e63946;
+  margin-left: 0;
+  opacity: 1;
+  font-weight: 700;
+}
+
+.jlpt-ruby.jlpt-force rt {
+  font-size: 0.6em;
+  color: #999;
+}
+
+/* 팝업 */
+#jlpt-n2-popup {
+  position: fixed;
+  z-index: 2147483647;
+  max-width: 360px;
+  min-width: 240px;
+  background: #1a1a2e;
+  color: #e0e0e0;
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 10px;
+  font-family: "Noto Sans JP", "Noto Sans KR", sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  pointer-events: auto;
+}
+
+.jlpt-entry {
+  padding: 6px 0;
+}
+
+.jlpt-entry + .jlpt-entry {
+  border-top: 1px solid #333;
+}
+
+.jlpt-entry-header {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.jlpt-expression {
+  font-size: 22px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.jlpt-reading {
+  font-size: 14px;
+  color: #aaa;
+}
+
+.jlpt-badge {
+  font-size: 10px;
+  font-weight: 600;
+  background: #e63946;
+  color: #fff;
+  padding: 1px 6px;
+  border-radius: 4px;
+  margin-left: auto;
+}
+
+.jlpt-meanings {
+  font-size: 14px;
+  color: #ccc;
+  margin-bottom: 2px;
+}
+
+.jlpt-meanings-en {
+  font-size: 12px;
+  color: #777;
+  margin-bottom: 2px;
+}
+
+.jlpt-pos {
+  font-size: 11px;
+  color: #666;
+  font-style: italic;
+}

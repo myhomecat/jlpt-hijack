@@ -1,0 +1,8 @@
+node_modules/
+dist/
+.cache/
+*.svg
+jlpt-hijack.zip
+translate.py
+translations_result.txt
+README_2.md

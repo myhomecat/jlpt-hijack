@@ -1,0 +1,28 @@
+{
+  "name": "jlpt-hijack",
+  "version": "0.1.0",
+  "description": "한국어 사이트를 읽으면서 JLPT 단어를 자동으로 잡아내는 크롬 익스텐션",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "build:dict": "tsx scripts/build-dict.ts",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@crxjs/vite-plugin": "^2.4.0",
+    "@scriptin/jmdict-simplified-loader": "^3.6.1",
+    "@scriptin/jmdict-simplified-types": "^3.6.1",
+    "@types/chrome": "^0.1.38",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.1",
+    "tsx": "^4.21.0",
+    "typescript": "^6.0.2",
+    "vite": "^8.0.3"
+  },
+  "dependencies": {
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4"
+  }
+}
